@@ -289,11 +289,11 @@ function checkAnswer(){
 
     let picAnswerVal = correctAns.toString()
 
-    answer.src = "../Assets/imgs/numbers/Image"+picAnswerVal[0]+".jpg";
+    answer.src = "Assets/imgs/numbers/Image"+picAnswerVal[0]+".jpg";
     answer.style.transform = "rotateY(10deg)";
 
     if(picAnswerVal.length > 1){
-        ansp2.src = "../Assets/imgs/numbers/Image"+picAnswerVal[1]+".jpg";
+        ansp2.src = "Assets/imgs/numbers/Image"+picAnswerVal[1]+".jpg";
 
         ansp2.style.transform = "rotateY(10deg)";
 
@@ -348,7 +348,7 @@ function playgame(){
     let tempImg1 = int1Images[0].at(0);
     let tempVal1 = int1
 
-    tempImg1.src = "../Assets/imgs/numbers/Image"+tempVal1+".jpg";
+    tempImg1.src = "Assets/imgs/numbers/Image"+tempVal1+".jpg";
     // console.log("the turnt num should be: ",tempImg1);
     tempImg1.style.transform = "rotateY(10deg)";
     positioning(tempImg1, 1);
@@ -357,7 +357,7 @@ function playgame(){
     let tempImg2 = int1Images[1].at(0);
     let tempVal2 = int2
 
-    tempImg2.src = "../Assets/imgs/numbers/Image"+tempVal2+".jpg";
+    tempImg2.src = "Assets/imgs/numbers/Image"+tempVal2+".jpg";
     // console.log("the turnt num should be: ",tempImg2);
     tempImg2.style.transform = "rotateY(10deg)";
 
