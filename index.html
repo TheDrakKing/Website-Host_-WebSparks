@@ -29,8 +29,6 @@
     <img id="bg6" src="Assets/imgs/symbols/addition_3.png" alt="">
     </div>
 
-
-
     <table class="MainTable">
         <!-- Display Nav on Larger screens  -->
         <tr class="Menu1">
@@ -38,10 +36,12 @@
                 <h2 class="logo">Math Calculator</h2>
             </th>
             <th class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
                 <button class="btnLogin-popup" id="btnSignIn" onclick="signIn()">Login</button>
                 <button style="display: none;" class="btnLogin-popup" id="StartGame" onclick="StartGame()">Start</button>
             </th>
@@ -56,10 +56,12 @@
 
         <tr class="Menu2">
             <th class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
                 <button class="btnLogin-popup" onclick="signIn()">Login</button>
                 <button style="display: none;" class="btnLogin-popup" id="StartGame" onclick="StartGame()">Start</button>
             </th>
@@ -132,22 +134,22 @@
 
                                 <div class="input">
                                     <input type="text" id="firstName2" minlength="3" required>
-                                    <label id="firstName_Label">First Name</label>
+                                    <label id="firstName_Label2">First Name</label>
                                 </div>
 
                                 <div class="input">
                                     <input type="text" id="lastName2" minlength="3" required>
-                                    <label id="lastName_Label">Last Name</label>
+                                    <label id = "lastName_Label2">Last Name</label>
                                 </div>
 
                                 <div class="input">
                                     <input type="email" id="Email2" onblur="validateEmail()" minlength="3" required>
-                                    <label id="Email2">Email</label>
+                                    <label id = "Email_Label2">Email</label>
                                 </div>
 
                                 <div class="input">
                                     <input id="DOB2" type="text" onclick="typeChanger()" onkeyup="calculateAge('DOB2','Age2', 'Age_Label2')" onblur="calculateAge('DOB2', 'Age2', 'Age_Label2')" required> 
-                                    <label id="DOB_Label">Date Of Birth</label>
+                                    <label id="DOB_Label2">Date Of Birth</label>
                                 </div>
 
                                 <div class="input">
@@ -191,7 +193,7 @@
                     <input id="StartGame" type="submit" value="Start">
                 </div>-->
 
-                <a name = GameArea></a>
+                <a id = GameArea></a>
 
                 <div class = "area" id = "area" style="display: none;">
             

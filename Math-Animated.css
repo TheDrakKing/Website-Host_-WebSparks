@@ -276,8 +276,7 @@ input[type=submit] {
     transition: .5s;
 }
 
-.input input:focus~label,
-.input input:valid~label{
+.input input:focus~label, .input input:valid~label{
     top: 5px;
 }
 
