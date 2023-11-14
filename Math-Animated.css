@@ -147,7 +147,7 @@ input[type=submit] {
   }
 /*Francis CSS */ 
 
-#header #header2{
+#header, #header2{
     padding: 20px 100px;
     /* background: blue; */
     display: flex;
