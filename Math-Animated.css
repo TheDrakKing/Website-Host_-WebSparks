@@ -397,6 +397,74 @@ fieldset .icon{
     z-index: 1;
 }
 
+h1, p, #paragraph, #paragraph li{
+    font-family: 'Yolk-Black',sans-serif;
+    color:mintcream;
+    text-shadow: 2px 2px black;
+}
+
+#paragraph{
+    backdrop-filter: blur(10px);
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 3vh;
+}
+
+#paragraph ul li{
+    color: orange;
+    margin-left: 5vh;
+}
+
+#image_container{
+    text-align: center;
+}
+
+#image_container img{
+    border-radius: 20px; 
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+}
+
+#paragraph p, #paragraph li{
+    margin-left: 1vh;
+}
+.fun_facts{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.slides{
+    display: none;
+}
+
+#contact_table th{
+    text-align: left;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    position:sticky;
+}
+
+.fixTable-column{
+    display: inline-block;
+}
+#author_info{
+    text-align: center;
+    background-color: rgba(255, 255, 255, .5);
+}
+#info a{
+    font-family: 'Dm Sans',sans-serif;
+    color:ghostwhite;
+    font-weight: 300;
+    /* text-shadow: 1px 1px dimgray; */
+}
+
+#info{
+    background-color:black;
+}
+
 .icon-close i{
     position: relative;
     top: 5px;
