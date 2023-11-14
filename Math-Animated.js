@@ -28,6 +28,7 @@ var userAnswer = document.getElementById("answerbox");
 var submitAnswer = document.getElementById("CheckAnswer");
 var Next = document.getElementById("NextButton");
 var StartGameButton = document.getElementById("StartGame");
+var StartGameButton2 = document.getElementById("StartGame2");
 var EndGameButton = document.getElementById("EndGame");
 var findPercentButton = document.getElementById("findPercent")
 var gameSection = document.getElementById('gameSectiontd')
@@ -225,6 +226,7 @@ function Register(event) {
             currentPlayerProgressbar()
         }
         StartGameButton.style.display = " inline-block"
+        StartGameButton2.style.display = " inline-block"
     }       
     
 }
@@ -242,6 +244,7 @@ function UserLogin(event){
         LoggedInUser = document.getElementById("firstName").value;
         console.log("this is logged in user", LoggedInUser)
         StartGameButton.style.display = " inline-block"
+        StartGameButton2.style.display = " inline-block"
         iconClose()
     }else if(check === false){
         window.alert("No such user match found!\nPlease Try registering."); 
@@ -634,6 +637,7 @@ function StartGame(){
     playArea.style.display = " block";
 
     StartGameButton.style.display = "none";
+    StartGameButton2.style.display = "none"
 
     playgame()
 }
