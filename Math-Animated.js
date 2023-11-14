@@ -130,6 +130,20 @@ function typeChanger(){
     document.getElementById("DOB2").type = "date";
 }
 
+function validateEmail(){
+    var emailInput = document.getElementById('Email2');
+
+      // Regular expression to check if the email ends with "@gmail.com"
+      var regex = /^[a-zA-Z0-9._-]+@gmail\.com$/;
+
+      if (!regex.test(emailInput.value)) {
+        window.alert("Please enter a valid Gmail address");
+        //emailInput.setCustomValidity('Invalid email');
+        //emailInput.setAttribute("value", null);
+        emailInput.value = null
+      }
+}
+
 function calculateAge(id , Age, label){
     var DOB = document.getElementById(id).value;
     var tag = document.getElementById(label);
@@ -208,7 +222,6 @@ function Register(event) {
         iconClose()
         StoreUserRegistration()
         if(NumberOfUser > 1){
-            StartGame()
             currentPlayerProgressbar()
         }
         StartGameButton.style.display = " inline-block"
@@ -244,13 +257,14 @@ function StoreUserRegistration(){
     /*We the Element from the index Webpage*/
     var fname = document.getElementById("firstName2").value;
     var lname = document.getElementById("lastName2").value;
+    var email = document.getElementById("Email2").value;
     var DOB = document.getElementById("DOB2").value;
 
     // PlayerRegistrationData[i] = [{fname, lname,  DOB , Gen}];
     console.log("this is the number of users ",NumberOfUser);
     LoggedInUser = fname;
     NumberOfUser++;   
-    PlayerRegistrationData[fname] = [fname, lname,  DOB , Gen, fname+lname+"@gmail.com", 0 ,0, NumberOfUser];
+    PlayerRegistrationData[fname] = [fname, lname,  DOB , Gen, email, 0 ,0, NumberOfUser];
     amtOfUsers.push(NumberOfUser)
 
     console.log(PlayerRegistrationData);
