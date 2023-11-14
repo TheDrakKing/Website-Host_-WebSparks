@@ -27,6 +27,7 @@ body{
     align-items: center;
     min-height: 200vh;
     background: linear-gradient(135deg, rgb(22, 51, 92), rgb(195, 195, 222),  rgb(5, 5, 66));
+    background-repeat: no-repeat;
     overflow-x: hidden;
 }
 
