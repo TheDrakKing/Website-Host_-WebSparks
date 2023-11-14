@@ -476,6 +476,10 @@ footer{
     position:sticky;
 }
 
+.table2{
+    display: none;
+}
+
 @media screen and (max-width:767px) {
     .Menu1{
         display: none ;
@@ -486,6 +490,12 @@ footer{
     }
     .navigation .btnLogin-popup{
         margin-top: 10px;
+    }
+    .table1, #contact_label{
+        display: none;
+    }
+    .table2{
+        display: table-row ;
     }
 }
 
