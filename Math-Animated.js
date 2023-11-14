@@ -849,12 +849,7 @@ function callgenderchart(){
 }
 
 let checkanswerstate = 0
-//submitAnswer.addEventListener("click",checkAnswer)
-//Next.addEventListener("click",playgame)
-//StartGameButton.addEventListener("click",StartGame)
-//EndGameButton.addEventListener("click",EndGame)
-//findPercentButton.addEventListener("click",findPercentageScore)
-//showCharts.addEventListener('click', callgenderchart)
+
 callgenderchart()
 
 
